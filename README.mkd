@@ -1,0 +1,58 @@
+# ForkinRio.org
+
+This project contains the source code for the [ForkinRio.org][fk] website.
+
+## Development Environment
+
+1. Install [Virtualenv][v]:
+
+        easy_install virtualenv
+
+1. Create a [Virtualenv][v] for the project:
+
+        mkdir -p ~/forkinrio
+        cd ~/forkinrio
+        virtualenv --no-site-packages --unzip-setuptools .
+        source ./bin/activate
+    
+2. Install [Pip][p], [Nose][n], [NoseGae][ng] and [WebTest][wt]:
+
+    	easy_install -U pip
+      pip install nose
+      pip install nosegae
+    	pip install webtest
+
+3. Download [Google App Engine][gae] and extract on:
+
+     ~/forkinrio
+
+4. Clone your forked repository:
+
+    	git clone git@github.com:[YOUR NAME]/forkinrio.git src
+    	cd src
+
+5. Change whatever you want!
+
+
+To run tests use this command on root project:
+
+      nosetests -v --with-gae --gae-lib-root ../google_appengine
+
+## Dependencies
+
+* [Google App Engine][gae]
+
+## License
+
+This code is free to be used under the terms of the [MIT license][mit].
+
+
+[v]:	http://pypi.python.org/pypi/virtualenv
+[p]:	http://pypi.python.org/pypi/pip
+[n]:  http://pypi.python.org/pypi/nose/0.11.3
+[ng]: http://pypi.python.org/pypi/NoseGAE/0.1.7
+[wt]: http://pypi.python.org/pypi/WebTest/1.2.1
+[fk]:	http://forkinrio.org
+[gae]:	http://code.google.com/appengine/docs/python/overview.html
+[mit]:	http://www.opensource.org/licenses/mit-license.php
+
