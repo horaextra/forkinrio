@@ -17,14 +17,14 @@ This project contains the source code for the [ForkinRio.org][fk] website.
     
 2. Install [Pip][p], [Nose][n], [NoseGae][ng] and [WebTest][wt]:
 
-    	easy_install -U pip
-      pip install nose
-      pip install nosegae
+    	easy_install -U pip    	
+    	pip install nose
+    	pip install nosegae
     	pip install webtest
 
 3. Download [Google App Engine][gae] and extract on:
 
-     ~/forkinrio
+      ~/forkinrio
 
 4. Clone your forked repository:
 
