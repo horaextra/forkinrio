@@ -5,6 +5,6 @@ app = TestApp(application)
 
 def test_index():
     response = app.get('/')
-    assert 'ForkinRio' in str(response)
+    assert '<img src="images/forkinrio_logotipo.png"/>' in str(response)
 
 
