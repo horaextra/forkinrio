@@ -3,11 +3,6 @@ import time
 import sys
 import os
 
-
-# Set the working directory to the root of our repo,
-# assuming that fabfile is on it.
-#os.chdir(os.path.dirname(__file__))
-
 def deploy(args):
     
   if not args[1:]:
@@ -24,11 +19,12 @@ def deploy(args):
     stamp = time.strftime("%Y%m%d-%Hh%Mm%Ss")
    
     #Deploy
-    os.system("../google_appengine/appcfg.py update ../src/ "
+    os.system("../google_appengine/appcfg.py update ../src/ ")
     
     #Tag the deployed revision
     os.system("git tag -a deploy/%s %s -m ''" % (stamp, rev))
     os.system("git push --tags")
+    
   else:
     print "ERROR: Tests are not passing. Cannot deploy."
     print "Solve problems and run command again.\n"
