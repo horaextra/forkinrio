@@ -33,10 +33,13 @@ This project contains the source code for the [ForkinRio.org][fk] website.
 
 5. Change whatever you want!
 
-
 To run tests use this command on root project:
 
       nosetests -v --with-gae --gae-lib-root ../google_appengine
+
+To make deploy run this command on project root path:
+
+      python deploy.py `git rev-parse HEAD`
 
 ## Dependencies
 
