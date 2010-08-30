@@ -1,5 +1,5 @@
 body {
-  font-family: 'Josefin Sans Std Light', serif;
+  font-family: 'Josefin Sans Std Light', arial, helvetica, serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -8,21 +8,23 @@ body {
   letter-spacing: 0em;
   word-spacing: 0em;
   line-height: 1em;
-  margin: auto 10%;
 }
 
 h2 {
   font-size: 28px;
-  text-shadow: 4px 4px 4px #bbb;
+  text-shadow: 2px 2px 2px #bbb;
 }
 
-div {
-  width: 100%;
+#main {
+  width: 760px;
+  margin: auto;
 }
 
 #main #logo{
-  margin: 20px 0 20px 0;
+  margin: 40px 0;
   text-align: center;
-  vertical-align: middle;
 }
 
+p, ul li {
+  line-height: 1.4em;
+}
